@@ -83,7 +83,7 @@ if(new Set(hashes).size!==1)throw Error(`Branch colors change with ribbons: ${ha
 console.log('Stable branch-color hashes:',hashes);
 if(previewOnly){await browser.close();process.exit(0);}
 await writeFile(`${output}/eukaryota-poster.jpg`,Buffer.from(await render(endScale,W/2+radius*endScale,2),'base64'));
-const encoder=spawn('ffmpeg',['-y','-loglevel','error','-f','image2pipe','-vcodec','mjpeg','-framerate',String(FPS),'-i','pipe:0','-i',fileURLToPath(new URL('./video-watermark.png',import.meta.url)),'-filter_complex','overlay=32:H-h-42','-an','-c:v','libx264','-preset','medium','-crf','20','-pix_fmt','yuv420p','-movflags','+faststart',`${output}/eukaryota-human-zoom.mp4`],{stdio:['pipe','inherit','inherit']});
+const encoder=spawn('ffmpeg',['-y','-loglevel','error','-f','image2pipe','-vcodec','mjpeg','-framerate',String(FPS),'-i','pipe:0','-i',fileURLToPath(new URL('./video-watermark.png',import.meta.url)),'-filter_complex','overlay=W-w-32:H-h-32','-an','-c:v','libx264','-preset','medium','-crf','20','-pix_fmt','yuv420p','-movflags','+faststart',`${output}/eukaryota-human-zoom.mp4`],{stdio:['pipe','inherit','inherit']});
 const encoderDone=once(encoder,'exit');
 for(let frame=0;frame<FPS*seconds;frame++){
  const t=frame/FPS;

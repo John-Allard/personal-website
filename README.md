@@ -26,4 +26,4 @@ The ESL-PSC Toolkit image is Figure 1 from the [author manuscript](https://kumar
 
 Offline rendering requires a Big Tree Viewer development checkout with Playwright installed, Chrome, and FFmpeg. Set `BTV_REPO` to the checkout, `BTV_URL` to its running development server, and `BTV_SESSION` to the session file. Optionally set `CHROME_PATH`. Run `node scripts/render-eukaryota.mjs`; add `--preview` for still images only. These tools are not required to build or serve the website.
 
-The video is 1920×1080, 24 fps, and 22 seconds long. The lower-left credit uses `scripts/video-watermark.png`.
+The video is 1920×1080, 24 fps, and 22 seconds long. The lower-right credit uses `scripts/video-watermark.png`.
