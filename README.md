@@ -18,6 +18,8 @@ Run `npm run dev` and open http://127.0.0.1:4173. The website uses plain HTML, C
 
 ## Figures
 
+The spiral tree in the software section is from the [Big Tree Viewer gallery](https://bigtreeviewer.net/about/example-50k-spiral-taxonomy.png).
+
 The eukaryotic tree animation was rendered in [Big Tree Viewer](https://bigtreeviewer.net/) from a session containing 484,771 tips. It starts at humans and zooms out to the full tree, with fixed branch colors and transitions between taxonomy ribbon ranks. The source session is not included here. Render settings are in `scripts/eukaryota-render-metadata.json`.
 
 The ESL-PSC Toolkit image is Figure 1 from the [author manuscript](https://kumarlab.net/downloads/papers/AllardKumar2026.pdf) of the [published paper](https://doi.org/10.1093/molbev/msag205). The Treemble screenshot is from the [project documentation](https://treemble.org/).
