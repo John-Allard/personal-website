@@ -1,0 +1,36 @@
+{
+  "human": 102980,
+  "tipCount": 484771,
+  "rotation": 2.941919795168486,
+  "rootAge": 1529.9999914029945,
+  "width": 1920,
+  "height": 1080,
+  "fps": 24,
+  "seconds": 22,
+  "initialHold": 1.5,
+  "zoomDuration": 18,
+  "finalHold": 2.5,
+  "branchColorHashes": [
+    2860438795,
+    2860438795,
+    2860438795
+  ],
+  "ribbonStages": [
+    [
+      "genus",
+      "family",
+      "order"
+    ],
+    [
+      "family",
+      "order",
+      "class"
+    ],
+    [
+      "order",
+      "class",
+      "phylum"
+    ]
+  ],
+  "sourceSession": "eukaryota_ultratree_1530mya_v1.btvsession"
+}

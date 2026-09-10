@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="John B. Allard is a postdoctoral researcher at Temple University studying machine learning, comparative genomics, phylogenetics, and the genetic basis of longevity and aging.">
+  <meta name="theme-color" content="#183d50">
+  <title>John B. Allard · Evolution, Genomics & Machine Learning</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="wordmark" href="#home" aria-label="John B. Allard, home">John B. Allard</a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="navigation">Menu <span aria-hidden="true">☰</span></button>
+      <nav id="navigation" aria-label="Main navigation">
+        <a href="#research">Research</a><a href="#software">Software</a><a href="#publications">Publications</a><a href="#about">About</a><a class="nav-contact" href="#contact">Get in touch <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero container" id="home" aria-labelledby="hero-heading">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> Postdoctoral researcher · Temple University</p>
+        <h1 id="hero-heading">John B. Allard</h1>
+        <p class="research-description">Machine learning, comparative genomics, and phylogenetics</p>
+        <p class="hero-description">I develop machine-learning methods to uncover the genetic basis of shared traits across species, with a focus on longevity and aging.</p>
+        <div class="hero-actions"><a class="button" href="#research">Research <span aria-hidden="true">↓</span></a><a class="text-link" href="https://scholar.google.com/citations?user=HV0WrDoAAAAJ&amp;hl=en">Google Scholar <span aria-hidden="true">↗</span></a></div>
+      </div>
+      <figure class="hero-figure portrait">
+        <img src="assets/profile-pic.png" width="943" height="879" alt="John B. Allard" fetchpriority="high">
+      </figure>
+    </section>
+    <div class="affiliation-strip"><div class="container affiliation-inner"><span class="affiliation-label">BASED AT</span><a href="https://www.temple.edu/">Temple University</a><span class="affiliation-divider"></span><a href="https://igem.temple.edu/">Institute for Genomics and Evolutionary Medicine</a><span class="affiliation-divider"></span><a href="https://cst.temple.edu/department-biology">Department of Biology</a></div></div>
+
+    <section class="section container" id="research" aria-labelledby="research-heading">
+      <div class="section-heading"><div><h2 id="research-heading">Research</h2></div><p>I study the genetic basis of traits that have evolved independently in different species, using comparative genomics and machine learning.</p></div>
+      <div class="research-grid">
+        <article class="research-item"><span class="research-number">01</span><h3>Machine learning for<br>comparative genomics</h3><p>Developing interpretable models that identify genes and sequence changes associated with traits that evolved independently across species.</p><a class="text-link" href="https://doi.org/10.1038/s41467-025-58428-8">Evolutionary sparse learning <span aria-hidden="true">↗</span></a></article>
+        <article class="research-item"><span class="research-number">02</span><h3>The genetics of<br>longevity & aging</h3><p>Investigating what independently evolved long lifespans can tell us about the genes and biological pathways underlying longevity.</p></article>
+        <article class="research-item"><span class="research-number">03</span><h3>Phylogenetics &<br>scientific software</h3><p>I study species’ evolutionary histories and build tools for viewing large phylogenies and extracting trees from published images.</p><a class="text-link" href="#software">Explore the tools <span aria-hidden="true">↓</span></a></article>
+      </div>
+      <article class="upcoming-work" aria-labelledby="upcoming-heading">
+        <p class="eyebrow">Work in progress</p>
+        <h3 id="upcoming-heading">A timed molecular phylogeny of 485,000 species reveals a pan-eukaryotic link between evolutionary rate and species diversity</h3>
+        <figure class="research-video">
+          <video id="eukaryota-video" controls loop muted playsinline preload="metadata" poster="assets/eukaryota-poster.jpg" aria-label="Zoom from Homo sapiens to the full eukaryotic phylogeny" aria-describedby="tree-video-caption">
+            <source src="assets/eukaryota-human-zoom.mp4" type="video/mp4">
+            <a href="assets/eukaryota-human-zoom.mp4">Download the tree animation</a>.
+          </video>
+          <figcaption id="tree-video-caption">The tree contains 484,771 tips. The view starts at <i>Homo sapiens</i> and zooms out to the full eukaryotic phylogeny, with taxonomy ribbons showing broader groups as the scale changes. Rendered in <a href="https://bigtreeviewer.net/">Big Tree Viewer</a>.</figcaption>
+        </figure>
+      </article>
+    </section>
+
+    <section class="software-section" id="software" aria-labelledby="software-heading"><div class="container section">
+      <div class="section-heading"><div><h2 id="software-heading">Software</h2></div><p>I develop software for viewing and digitizing phylogenetic trees and analyzing comparative genomic data.</p></div>
+      <div class="software-grid">
+        <article class="software-card"><a class="software-image eukaryota-image" href="https://bigtreeviewer.net/" aria-label="Open Big Tree Viewer"><img src="assets/eukaryota-detail.jpg" width="1920" height="1080" alt="Zoomed detail of the eukaryotic phylogeny, showing vertebrate branches and taxonomy ribbons in Big Tree Viewer." loading="lazy"><span class="image-arrow" aria-hidden="true">↗</span></a><div class="software-copy"><p class="eyebrow">Browser application</p><h3>Big Tree Viewer</h3><p>Explore very large phylogenetic trees directly in your browser. Navigate evolutionary relationships, add taxonomic context, and export figures.</p><div class="software-links"><a href="https://bigtreeviewer.net/">Launch app <span aria-hidden="true">↗</span></a><a href="https://github.com/John-Allard/big_tree_viewer">Source code <span aria-hidden="true">↗</span></a></div></div></article>
+        <article class="software-card"><a class="software-image treemble-image" href="https://treemble.org/" aria-label="Visit Treemble"><img src="assets/treemble.png" width="2506" height="1652" alt="Treemble desktop interface with nodes marked on a published phylogenetic tree image." loading="lazy"><span class="image-arrow" aria-hidden="true">↗</span></a><div class="software-copy"><p class="eyebrow">Desktop application · macOS & Windows</p><h3>Treemble</h3><p>Turn published phylogeny images into machine-readable Newick trees. Recover evolutionary data for new analyses, comparisons, and synthesis.</p><div class="software-links"><a href="https://treemble.org/">Website & downloads <span aria-hidden="true">↗</span></a><a href="https://github.com/John-Allard/Treemble">Source code <span aria-hidden="true">↗</span></a></div></div></article>
+        <article class="software-card"><a class="software-image esl-image" href="assets/esl-psc-figure.png" aria-label="View the full ESL-PSC Toolkit figure"><img src="assets/esl-psc-figure.png" width="2048" height="1859" alt="Figure 1 from the ESL-PSC Toolkit manuscript: analysis settings, phylogenetic pair selection, phenotype thresholds, and sequence-site results." loading="lazy"><span class="image-arrow" aria-hidden="true">↗</span></a><div class="software-copy"><p class="eyebrow">Comparative genomics toolkit</p><h3>ESL-PSC Toolkit</h3><p>A graphical environment for designing phylogenetic contrasts, fitting models of convergent traits, and examining genes and sequence sites.</p><p class="figure-credit">Figure 1, Allard & Kumar, <i>Molecular Biology and Evolution</i> (2026).</p><div class="software-links"><a href="https://github.com/kumarlabgit/ESL-PSC">Software <span aria-hidden="true">↗</span></a><a href="https://doi.org/10.1093/molbev/msag205">Published paper <span aria-hidden="true">↗</span></a></div></div></article>
+      </div>
+    </div></section>
+
+    <section class="section container" id="publications" aria-labelledby="publications-heading">
+      <div class="section-heading publications-heading"><div><h2 id="publications-heading">Selected publications</h2></div><a class="text-link" href="https://scholar.google.com/citations?user=HV0WrDoAAAAJ&amp;hl=en">Full list on Google Scholar <span aria-hidden="true">↗</span></a></div>
+      <div class="publication-list">
+        <article class="publication"><span class="publication-year">2026</span><div><p class="journal">Molecular Biology and Evolution</p><h3><a href="https://doi.org/10.1093/molbev/msag205">ESL-PSC Toolkit: a graphical software environment for linking shared genetic changes to convergent phenotypes <span aria-hidden="true">↗</span></a></h3><p class="authors"><strong>John B. Allard</strong> and Sudhir Kumar</p><details><summary>About this work</summary><p>A graphical interface brings phylogenetically informed species-pair selection, model fitting, and interpretation into a connected comparative-genomics workflow.</p></details></div><span class="paper-type">Software</span></article>
+        <article class="publication"><span class="publication-year">2026</span><div><p class="journal">Bioinformatics</p><h3><a href="https://doi.org/10.1093/bioinformatics/btag197">Treemble: a graphical tool to generate Newick strings from phylogenetic tree images <span aria-hidden="true">↗</span></a></h3><p class="authors"><strong>John B. Allard</strong> and Sudhir Kumar</p><details><summary>About this work</summary><p>Treemble helps researchers recover machine-readable phylogenies from figures by marking node positions, with assistance from automated detection.</p></details></div><span class="paper-type">Software</span></article>
+        <article class="publication"><span class="publication-year">2026</span><div><p class="journal">Nature Reviews Genetics</p><h3><a href="https://doi.org/10.1038/s41576-026-00933-7">The genetic foundations of convergent traits <span aria-hidden="true">↗</span></a></h3><p class="authors"><strong>John B. Allard</strong> and Sudhir Kumar</p><details><summary>About this work</summary><p>A review of the genetic mechanisms behind repeated trait evolution and the computational approaches used to distinguish adaptive convergence from background similarity.</p></details></div><span class="paper-type">Review</span></article>
+        <article class="publication"><span class="publication-year">2025</span><div><p class="journal">Molecular Biology and Evolution</p><h3><a href="https://doi.org/10.1093/molbev/msaf101">MEGA-GPT: Artificial Intelligence Guidance and Building Analytical Protocols Using MEGA Software <span aria-hidden="true">↗</span></a></h3><p class="authors"><strong>John B. Allard</strong> and Sudhir Kumar</p><details><summary>About this work</summary><p>An AI assistant uses MEGA documentation and methodological resources to help researchers develop analytical protocols through natural-language questions.</p></details></div><span class="paper-type">Methods</span></article>
+        <article class="publication"><span class="publication-year">2025</span><div><p class="journal">Nature Communications</p><h3><a href="https://doi.org/10.1038/s41467-025-58428-8">Evolutionary sparse learning reveals the shared genetic basis of convergent traits <span aria-hidden="true">↗</span></a></h3><p class="authors"><strong>John B. Allard</strong>, Sudip Sharma, Ravi Patel, Maxwell Sanderford, Koichiro Tamura, Slobodan Vucetic, Glenn S. Gerhard, and Sudhir Kumar</p><details><summary>About this work</summary><p>Phylogeny-informed machine learning identifies genetic signals associated with independently evolved traits, demonstrated with echolocation in mammals and C4 photosynthesis in grasses.</p></details></div><span class="paper-type">Research</span></article>
+      </div>
+    </section>
+
+    <section class="about-section" id="about" aria-labelledby="about-heading"><div class="container about-inner">
+      <div class="about-identity"><div><h2 id="about-heading">About me</h2><p>Postdoctoral researcher<br>Philadelphia, Pennsylvania</p></div></div>
+      <div class="about-copy"><p>I’m a postdoctoral researcher in <a href="https://kumarlab.net/">Sudhir Kumar’s lab</a> at Temple University, in the Institute for Genomics and Evolutionary Medicine and the Department of Biology.</p><p>My work focuses on machine-learning methods for comparative genomics, particularly the genetic basis of longevity and aging. I also work on phylogenetics, both to account for shared ancestry in comparative analyses and to make published phylogenetic data easier to use.</p><div class="about-links"><a href="https://cst.temple.edu/about/faculty-staff/john-allard">Temple profile ↗</a><a href="https://orcid.org/0009-0000-7766-0769">ORCID ↗</a><a href="https://github.com/John-Allard">GitHub ↗</a></div></div>
+    </div></section>
+
+    <section class="contact-section container" id="contact" aria-labelledby="contact-heading"><div><h2 id="contact-heading">Contact</h2><p>You can reach me by email about my research or software.</p></div><a class="contact-email" href="mailto:john.allard@temple.edu">john.allard@temple.edu <span aria-hidden="true">↗</span></a></section>
+  </main>
+  <footer class="container"><span>© <span id="year">2026</span> John B. Allard</span><span>Evolution · Genomics · Machine learning</span><a href="#home">Back to top ↑</a></footer>
+</body>
+</html>

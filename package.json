@@ -1,0 +1,9 @@
+{
+  "name": "allardjb-personal-website",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "build": "node scripts/build.mjs"
+  }
+}
